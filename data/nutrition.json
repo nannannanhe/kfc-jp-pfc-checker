@@ -1,0 +1,526 @@
+{
+  "source": "ケンタッキーフライドチキン 栄養成分表",
+  "date": "2026/4/8",
+  "unit": {
+    "energy": "kcal",
+    "protein": "g",
+    "fat": "g",
+    "carbohydrate": "g",
+    "dietary_fiber": "g"
+  },
+  "items": [
+    {
+      "name": "オリジナルチキン",
+      "category": "chicken",
+      "energy": 218,
+      "protein": 16.5,
+      "fat": 12.8,
+      "carbohydrate": 9.1,
+      "dietary_fiber": 0.4
+    },
+    {
+      "name": "レモン香るパリパリ旨塩チキン",
+      "category": "chicken",
+      "energy": 253,
+      "protein": 17.6,
+      "fat": 15.0,
+      "carbohydrate": 11.9,
+      "dietary_fiber": 0.3
+    },
+    {
+      "name": "レッドホットチキン",
+      "category": "chicken",
+      "energy": 271,
+      "protein": 20.9,
+      "fat": 16.7,
+      "carbohydrate": 9.3,
+      "dietary_fiber": 0.6
+    },
+    {
+      "name": "まるかじりケンタ",
+      "category": "chicken",
+      "energy": 134,
+      "protein": 9.1,
+      "fat": 7.9,
+      "carbohydrate": 6.9,
+      "dietary_fiber": 0.3
+    },
+    {
+      "name": "骨なしケンタッキー",
+      "category": "chicken",
+      "energy": 191,
+      "protein": 20.3,
+      "fat": 8.5,
+      "carbohydrate": 8.3,
+      "dietary_fiber": 0.3
+    },
+    {
+      "name": "カーネルクリスピー",
+      "category": "chicken",
+      "energy": 119,
+      "protein": 6.8,
+      "fat": 6.6,
+      "carbohydrate": 8.2,
+      "dietary_fiber": 0.3
+    },
+    {
+      "name": "ナゲット 5ピース",
+      "category": "chicken",
+      "energy": 222,
+      "protein": 13.3,
+      "fat": 13.4,
+      "carbohydrate": 11.8,
+      "dietary_fiber": 0.3
+    },
+    {
+      "name": "ケンタの鶏竜田バーガー",
+      "category": "burger",
+      "energy": 473,
+      "protein": 18.0,
+      "fat": 27.5,
+      "carbohydrate": 38.8,
+      "dietary_fiber": 1.6
+    },
+    {
+      "name": "ケンタの鶏竜田バーガー 香味ネギソース",
+      "category": "burger",
+      "energy": 501,
+      "protein": 18.3,
+      "fat": 28.2,
+      "carbohydrate": 43.7,
+      "dietary_fiber": 1.6
+    },
+    {
+      "name": "チキンフィレバーガー",
+      "category": "burger",
+      "energy": 398,
+      "protein": 24.3,
+      "fat": 19.7,
+      "carbohydrate": 31.1,
+      "dietary_fiber": 1.7
+    },
+    {
+      "name": "辛口チキンフィレバーガー",
+      "category": "burger",
+      "energy": 384,
+      "protein": 24.4,
+      "fat": 17.8,
+      "carbohydrate": 31.9,
+      "dietary_fiber": 1.8
+    },
+    {
+      "name": "チーズチキンフィレバーガー",
+      "category": "burger",
+      "energy": 468,
+      "protein": 26.8,
+      "fat": 25.8,
+      "carbohydrate": 32.1,
+      "dietary_fiber": 1.7
+    },
+    {
+      "name": "ダブルチキンフィレバーガー",
+      "category": "burger",
+      "energy": 615,
+      "protein": 44.6,
+      "fat": 30.7,
+      "carbohydrate": 40.0,
+      "dietary_fiber": 2.0
+    },
+    {
+      "name": "和風チキンカツバーガー",
+      "category": "burger",
+      "energy": 426,
+      "protein": 16.0,
+      "fat": 22.3,
+      "carbohydrate": 40.5,
+      "dietary_fiber": 2.1
+    },
+    {
+      "name": "チーズにおぼれるフィレバーガー（クリーミーモッツァレラ）",
+      "category": "burger",
+      "energy": 469,
+      "protein": 26.8,
+      "fat": 25.6,
+      "carbohydrate": 33.3,
+      "dietary_fiber": 1.7
+    },
+    {
+      "name": "チーズにおぼれるフィレバーガー（濃い濃いチェダー）",
+      "category": "burger",
+      "energy": 488,
+      "protein": 26.7,
+      "fat": 28.2,
+      "carbohydrate": 31.9,
+      "dietary_fiber": 1.6
+    },
+    {
+      "name": "ペッパーマヨツイスター",
+      "category": "burger",
+      "energy": 301,
+      "protein": 11.3,
+      "fat": 14.5,
+      "carbohydrate": 31.7,
+      "dietary_fiber": 3.3
+    },
+    {
+      "name": "てりやきツイスター",
+      "category": "burger",
+      "energy": 360,
+      "protein": 11.6,
+      "fat": 18.8,
+      "carbohydrate": 35.0,
+      "dietary_fiber": 3.2
+    },
+    {
+      "name": "チーズにおぼれるツイスター",
+      "category": "burger",
+      "energy": 410,
+      "protein": 12.2,
+      "fat": 26.1,
+      "carbohydrate": 31.8,
+      "dietary_fiber": 1.4
+    },
+    {
+      "name": "カーネルクランチポテト S",
+      "category": "sides",
+      "energy": 191,
+      "protein": 2.5,
+      "fat": 9.7,
+      "carbohydrate": 23.6,
+      "dietary_fiber": 1.6
+    },
+    {
+      "name": "カーネルクランチポテト L",
+      "category": "sides",
+      "energy": 382,
+      "protein": 5.0,
+      "fat": 19.3,
+      "carbohydrate": 47.2,
+      "dietary_fiber": 3.2
+    },
+    {
+      "name": "カーネルクランチポテト BOX",
+      "category": "sides",
+      "energy": 860,
+      "protein": 11.3,
+      "fat": 43.5,
+      "carbohydrate": 106.2,
+      "dietary_fiber": 7.2
+    },
+    {
+      "name": "フライドポテト S",
+      "category": "sides",
+      "energy": 195,
+      "protein": 2.6,
+      "fat": 7.8,
+      "carbohydrate": 28.7,
+      "dietary_fiber": 2.4
+    },
+    {
+      "name": "フライドポテト L",
+      "category": "sides",
+      "energy": 390,
+      "protein": 5.3,
+      "fat": 15.5,
+      "carbohydrate": 57.4,
+      "dietary_fiber": 4.8
+    },
+    {
+      "name": "フライドポテト BOX",
+      "category": "sides",
+      "energy": 908,
+      "protein": 12.3,
+      "fat": 36.1,
+      "carbohydrate": 133.5,
+      "dietary_fiber": 11.2
+    },
+    {
+      "name": "コールスロー M",
+      "category": "sides",
+      "energy": 137,
+      "protein": 1.6,
+      "fat": 10.2,
+      "carbohydrate": 10.3,
+      "dietary_fiber": 1.9
+    },
+    {
+      "name": "コールスロー S",
+      "category": "sides",
+      "energy": 85,
+      "protein": 1.0,
+      "fat": 6.3,
+      "carbohydrate": 6.3,
+      "dietary_fiber": 1.2
+    },
+    {
+      "name": "ビスケット",
+      "category": "sides",
+      "energy": 211,
+      "protein": 3.2,
+      "fat": 12.5,
+      "carbohydrate": 21.3,
+      "dietary_fiber": 0.1
+    },
+    {
+      "name": "チョコパイ",
+      "category": "sides",
+      "energy": 270,
+      "protein": 3.1,
+      "fat": 15.8,
+      "carbohydrate": 29.0,
+      "dietary_fiber": 1.5
+    },
+    {
+      "name": "ちゅる～りぃ（ブルーハワイ）",
+      "category": "drink",
+      "energy": 196,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 49.8,
+      "dietary_fiber": null
+    },
+    {
+      "name": "ちゅる～りぃ（ピンククランベリー）",
+      "category": "drink",
+      "energy": 202,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 51.0,
+      "dietary_fiber": null
+    },
+    {
+      "name": "ペプシコーラ S",
+      "category": "drink",
+      "energy": 100,
+      "protein": 0.1,
+      "fat": 0.0,
+      "carbohydrate": 25.0,
+      "dietary_fiber": null
+    },
+    {
+      "name": "ペプシコーラ M",
+      "category": "drink",
+      "energy": 132,
+      "protein": 0.1,
+      "fat": 0.0,
+      "carbohydrate": 32.7,
+      "dietary_fiber": null
+    },
+    {
+      "name": "ペプシコーラ L",
+      "category": "drink",
+      "energy": 189,
+      "protein": 0.2,
+      "fat": 0.0,
+      "carbohydrate": 47.0,
+      "dietary_fiber": null
+    },
+    {
+      "name": "ジンジャーエール S",
+      "category": "drink",
+      "energy": 86,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 21.4,
+      "dietary_fiber": null
+    },
+    {
+      "name": "ジンジャーエール M",
+      "category": "drink",
+      "energy": 112,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 28.1,
+      "dietary_fiber": null
+    },
+    {
+      "name": "ジンジャーエール L",
+      "category": "drink",
+      "energy": 161,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 40.3,
+      "dietary_fiber": null
+    },
+    {
+      "name": "メロンソーダ S",
+      "category": "drink",
+      "energy": 101,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 25.3,
+      "dietary_fiber": null
+    },
+    {
+      "name": "メロンソーダ M",
+      "category": "drink",
+      "energy": 133,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 33.2,
+      "dietary_fiber": null
+    },
+    {
+      "name": "メロンソーダ L",
+      "category": "drink",
+      "energy": 190,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 47.7,
+      "dietary_fiber": null
+    },
+    {
+      "name": "なっちゃんすっきりオレンジ S",
+      "category": "drink",
+      "energy": 90,
+      "protein": 0.1,
+      "fat": 0.0,
+      "carbohydrate": 22.4,
+      "dietary_fiber": null
+    },
+    {
+      "name": "なっちゃんすっきりオレンジ M",
+      "category": "drink",
+      "energy": 118,
+      "protein": 0.1,
+      "fat": 0.0,
+      "carbohydrate": 29.4,
+      "dietary_fiber": null
+    },
+    {
+      "name": "なっちゃんすっきりオレンジ L",
+      "category": "drink",
+      "energy": 169,
+      "protein": 0.2,
+      "fat": 0.0,
+      "carbohydrate": 42.2,
+      "dietary_fiber": null
+    },
+    {
+      "name": "レモネード／レモネードソーダ S",
+      "category": "drink",
+      "energy": 114,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 28.5,
+      "dietary_fiber": null
+    },
+    {
+      "name": "レモネード／レモネードソーダ M",
+      "category": "drink",
+      "energy": 149,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 37.3,
+      "dietary_fiber": null
+    },
+    {
+      "name": "レモネード／レモネードソーダ L",
+      "category": "drink",
+      "energy": 214,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 53.5,
+      "dietary_fiber": null
+    },
+    {
+      "name": "サントリーウーロン茶 S",
+      "category": "drink",
+      "energy": 0,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 0.0,
+      "dietary_fiber": null
+    },
+    {
+      "name": "サントリーウーロン茶 M",
+      "category": "drink",
+      "energy": 0,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 0.0,
+      "dietary_fiber": null
+    },
+    {
+      "name": "サントリーウーロン茶 L",
+      "category": "drink",
+      "energy": 0,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 0.0,
+      "dietary_fiber": null
+    },
+    {
+      "name": "アイスティー S",
+      "category": "drink",
+      "energy": 8,
+      "protein": 0.1,
+      "fat": 0.0,
+      "carbohydrate": 1.9,
+      "dietary_fiber": null
+    },
+    {
+      "name": "アイスティー M",
+      "category": "drink",
+      "energy": 10,
+      "protein": 0.1,
+      "fat": 0.0,
+      "carbohydrate": 2.4,
+      "dietary_fiber": null
+    },
+    {
+      "name": "アイスティー L",
+      "category": "drink",
+      "energy": 15,
+      "protein": 0.2,
+      "fat": 0.0,
+      "carbohydrate": 3.5,
+      "dietary_fiber": null
+    },
+    {
+      "name": "アイスコーヒー S",
+      "category": "drink",
+      "energy": 8,
+      "protein": 0.4,
+      "fat": 0.0,
+      "carbohydrate": 1.5,
+      "dietary_fiber": null
+    },
+    {
+      "name": "アイスコーヒー M",
+      "category": "drink",
+      "energy": 11,
+      "protein": 0.6,
+      "fat": 0.0,
+      "carbohydrate": 1.9,
+      "dietary_fiber": null
+    },
+    {
+      "name": "アイスコーヒー L",
+      "category": "drink",
+      "energy": 16,
+      "protein": 0.8,
+      "fat": 0.0,
+      "carbohydrate": 2.8,
+      "dietary_fiber": null
+    },
+    {
+      "name": "ホットコーヒー",
+      "category": "drink",
+      "energy": 7,
+      "protein": 0.4,
+      "fat": 0.0,
+      "carbohydrate": 1.3,
+      "dietary_fiber": null
+    },
+    {
+      "name": "リプトンホットティー",
+      "category": "drink",
+      "energy": 0,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 0.0,
+      "dietary_fiber": null
+    }
+  ]
+}
