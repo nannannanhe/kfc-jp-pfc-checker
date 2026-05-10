@@ -21,6 +21,9 @@
 - 從各分類中點選餐點，加入計算對象
   - 各餐點皆可選擇複數(ex: 點兩塊炸雞)
 - 可取消已選取的餐點
+- 切換 UI 語言（日文 / 英文）
+  - 日文模式：顯示日文餐點名稱與標籤
+  - 英文模式：顯示 name_en 與英文標籤
 
 ### 營養資料顯示
 
@@ -54,6 +57,16 @@ interface MenuItem {
   };
 }
 ```
+
+`data/nutrition.json` の flat フィールドを MenuItem へ変換する adapter は `src/lib/nutrition.ts` に実装する：
+
+| JSON フィールド  | MenuItem フィールド      |
+| --------------- | ----------------------- |
+| `energy`        | `nutrition.calories`    |
+| `carbohydrate`  | `nutrition.carbs`       |
+| `dietary_fiber` | `nutrition.fiber`       |
+
+`id` は `name_en` を kebab-case に変換して生成する（例: `"original-recipe-chicken"`）。
 
 ## Code Conventions
 
@@ -91,7 +104,7 @@ UI 元件行為：
 
 完整使用者流程：
 
-- 頁面正常載入，三個分類選單都顯示
+- 頁面正常載入，四個分類選單都顯示
 - 點選餐點 → 出現在已選清單 → 總計更新
 - 取消選取 → 從清單移除 → 總計正確扣除
 - 含缺少資料的餐點 → 對應欄位顯示 `-` → 總計不受影響
@@ -104,8 +117,48 @@ UI 元件行為：
 
 ## Project Structure
 
-<!-- Claude Code が初期化後に補完する -->
+```
+src/
+├── main.ts
+├── App.svelte
+├── types.ts                    # MenuItem, NutritionValue, Locale
+├── lib/
+│   ├── nutrition.ts            # JSON adapter + pure calc (calcTotal, formatValue)
+│   └── i18n.ts                 # ja/en label maps + t() helper
+├── stores/
+│   └── order.svelte.ts         # selected items + quantities (writable store)
+└── components/
+    ├── LanguageToggle.svelte   # ja/en switch button
+    ├── CategoryTabs.svelte     # tab bar for 4 categories
+    ├── MenuList.svelte         # scrollable list of items per category
+    ├── MenuItemCard.svelte     # single item: name + nutrition + qty control
+    ├── SelectedList.svelte     # list of selected items with per-item nutrition
+    └── TotalRow.svelte         # grand total row
+
+data/
+├── nutrition.json              # source data (flat fields, from PDF)
+└── raw/                        # gitignored PDF sources
+
+tests/
+├── unit/
+│   └── nutrition.test.ts
+├── component/
+│   └── MenuItemCard.test.ts
+└── e2e/
+    └── flow.spec.ts
+
+.github/
+└── workflows/
+    └── ci.yml                  # unit → component → e2e → deploy
+```
 
 ## Commands
 
-<!-- Claude Code が初期化後に補完する -->
+```bash
+npm run dev          # Vite dev server (http://localhost:5173)
+npm run build        # TypeScript check + Vite production build
+npm run preview      # Preview production build locally
+npm run test         # Vitest — unit + component tests
+npm run test:e2e     # Playwright E2E tests
+npm run typecheck    # tsc --noEmit
+```
