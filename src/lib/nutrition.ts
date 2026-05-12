@@ -53,5 +53,5 @@ export function formatValue(value: NutritionValue): string {
 export function scaleValue(value: NutritionValue, qty: number): string {
   if (value === null) return '-';
   const scaled = value * qty;
-  return Number.isInteger(scaled) ? String(scaled) : scaled.toFixed(1);
+  return Number.isInteger(value) ? String(scaled) : scaled.toFixed(1);
 }
