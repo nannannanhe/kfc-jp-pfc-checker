@@ -4,13 +4,11 @@
 
 ---
 
-## [要確認] Node.js バージョン ≥ 18 必須
+## [決定] Node.js 24 を採用（≥ 18 必須、24 で確認済み）
 
-**狀況**: 現在の実行環境は Node.js v16.15.0 だが、Vite 5 / Vitest 2 / Svelte 5 / Playwright は Node.js ≥ 18 を要求する。  
-`npm install` は警告付きで完了するが、`npm run dev` / `npm test` を実行すると `crypto.getRandomValues is not a function` エラーになる。
+**経緯**: 初期環境は Node.js v16.15.0 だったため、Vite 5 / Vitest 2 / Svelte 5 / Playwright が `crypto.getRandomValues is not a function` エラーで動作しなかった。
 
-**対応**: `package.json` に `"engines": { "node": ">=18" }` を追記。  
-**アクション**: Node.js 18 LTS 以上にアップグレードしてから `npm run dev` や `npm test` を実行すること。
+**対応**: `package.json` に `"engines": { "node": ">=18" }` を追記し、Node.js v24 へアップグレード。CI（`.github/workflows/ci.yml`）も `node-version: 24` に変更済み。現在のローカル環境は v24.15.0 で動作確認済み。
 
 ---
 
@@ -70,7 +68,8 @@
 
 ---
 
-## [未解決] `npm run test` の実行確認ができていない
+## [決定] unit / component テストの動作確認済み
 
-**理由**: 現環境の Node.js が v16 のため Vitest が起動できず、unit / component テストの pass/fail を確認できていない。  
-**アクション**: Node.js 18+ 環境で `npm test` と `npm run test:e2e` を実行して確認すること。
+**経緯**: Node.js v16 環境では Vitest が起動できず未確認だったが、Node.js v24 へのアップグレードおよびテストエラー修正（`npm test` エラー対応）により、unit / component テストは通過確認済み。
+
+**残課題**: E2E テスト（`npm run test:e2e`）および Cloudflare Pages デプロイ（GitHub Secrets 登録）は別途確認が必要。

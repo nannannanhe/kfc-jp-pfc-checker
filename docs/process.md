@@ -35,8 +35,8 @@
 - [x] 撰寫 Unit Tests（`tests/unit/nutrition.test.ts`）：`calcTotal()` 邊界情況、JSON 資料完整性
 - [x] 撰寫 Component Tests（`tests/component/MenuItemCard.test.ts`）：缺少資料顯示 `-`、選取/取消行為
 - [x] 撰寫 E2E Tests（`tests/e2e/flow.spec.ts`）：完整使用者流程、語言切換
-- [ ] Node.js ≥ 18 環境で `npm test` 実行確認（現環境 v16 のため未実行）
-- [ ] Node.js ≥ 18 環境で `npm run test:e2e` 実行確認
+- [x] Node.js 24 環境で `npm test` 実行確認済み（unit / component テスト pass）
+- [ ] `npm run test:e2e` 実行確認（CI / ローカルともに未確認）
 
 ## CI/CD
 
