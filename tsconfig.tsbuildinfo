@@ -1,0 +1,1 @@
+{"root":["./src/main.ts","./src/types.ts","./src/lib/i18n.ts","./src/lib/nutrition.ts","./src/stores/order.svelte.ts","./tests/setup.ts","./tests/component/menuitemcard.test.ts","./tests/e2e/flow.spec.ts","./tests/unit/nutrition.test.ts"],"version":"5.9.3"}
