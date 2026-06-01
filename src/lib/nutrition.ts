@@ -50,6 +50,10 @@ export function formatValue(value: NutritionValue): string {
   return String(value);
 }
 
+export function getDataDate(): string {
+  return nutritionData.date;
+}
+
 export function scaleValue(value: NutritionValue, qty: number): string {
   if (value === null) return '-';
   const scaled = value * qty;
