@@ -73,3 +73,19 @@
 **経緯**: Node.js v16 環境では Vitest が起動できず未確認だったが、Node.js v24 へのアップグレードおよびテストエラー修正（`npm test` エラー対応）により、unit / component テストは通過確認済み。
 
 **残課題**: E2E テスト（`npm run test:e2e`）および Cloudflare Pages デプロイ（GitHub Secrets 登録）は別途確認が必要。
+
+---
+
+## [決定] 二欄レイアウト: sticky top の値を `top-[52px]` に設定
+
+**経緯**: 右列（選択済み+合計）の sticky 位置は、sticky な header（py-3 + text-base ≈ 48-52px）の高さに合わせる必要がある。announce バーは非 sticky でスクロールで消えるため考慮しない。
+
+**決定**: `top-[52px]` を採用。ブラウザ確認後、ずれがあれば `top-14`（56px）等に微調整してください。
+
+---
+
+## [決定] SelectedList: 削除ボタンの赤色を維持
+
+**経緯**: 主題色を blue に変更したが、削除ボタン（`text-red-500 hover:text-red-700`）は変更対象外とした。
+
+**決定**: 「削除 = 危険」という意味論的な赤として意図的に残しています。変更したい場合は `text-gray-400 hover:text-gray-600` などにしてください。
