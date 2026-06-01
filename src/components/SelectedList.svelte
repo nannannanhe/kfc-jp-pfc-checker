@@ -6,11 +6,15 @@
   let { locale }: { locale: Locale } = $props();
 </script>
 
-{#if order.items.length > 0}
-  <div class="bg-white rounded-lg shadow-sm p-4">
-    <h2 class="font-bold text-gray-900 mb-3 text-sm">
-      {locale === 'ja' ? '選択中' : 'Selected'}
-    </h2>
+<div class="bg-white rounded-lg shadow-sm p-4">
+  <h2 class="font-bold text-gray-900 mb-3 text-sm">
+    {locale === 'ja' ? '選択中' : 'Selected'}
+  </h2>
+  {#if order.items.length === 0}
+    <p class="text-xs text-gray-400 text-center py-4">
+      {locale === 'ja' ? '品目を選択してください' : 'Select items from the menu'}
+    </p>
+  {:else}
     {#each order.items as { item, qty } (item.id)}
       <div class="flex justify-between items-center py-2 border-b border-gray-100 last:border-0">
         <div class="flex-1 min-w-0">
@@ -37,5 +41,5 @@
         </button>
       </div>
     {/each}
-  </div>
-{/if}
+  {/if}
+</div>
