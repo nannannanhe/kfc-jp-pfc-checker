@@ -15,7 +15,7 @@
 </script>
 
 <div class="min-h-screen bg-gray-50">
-  <header class="bg-red-600 text-white px-4 py-3 flex justify-between items-center sticky top-0 z-10 shadow">
+  <header class="bg-primary text-white px-4 py-3 flex justify-between items-center sticky top-0 z-10 shadow">
     <h1 class="text-base font-bold">KFC Japan PFC Checker</h1>
     <LanguageToggle bind:locale />
   </header>

@@ -36,7 +36,7 @@
       {/if}
       <button
         onclick={() => order.add(item)}
-        class="w-7 h-7 rounded-full bg-red-600 text-white font-bold text-lg leading-none hover:bg-red-700 transition-colors"
+        class="w-7 h-7 rounded-full bg-primary text-white font-bold text-lg leading-none hover:bg-primary-hover transition-colors"
         aria-label="add"
       >
         +
