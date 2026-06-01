@@ -24,7 +24,7 @@
             <span>{scaleValue(item.nutrition.calories, qty)} kcal</span>
             <span>{locale === 'ja' ? '炭' : 'C'} {scaleValue(item.nutrition.carbs, qty)}g</span>
             <span>P {scaleValue(item.nutrition.protein, qty)}g</span>
-            <span>F {scaleValue(item.nutrition.fat, qty)}g</span>
+            <span>{locale === 'ja' ? '脂' : 'F'} {scaleValue(item.nutrition.fat, qty)}g</span>
             <span>{locale === 'ja' ? '繊' : 'Fb'} {scaleValue(item.nutrition.fiber, qty)}g</span>
           </div>
         </div>

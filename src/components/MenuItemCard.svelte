@@ -19,7 +19,7 @@
         <span>{formatValue(item.nutrition.calories)} kcal</span>
         <span>{locale === 'ja' ? '炭' : 'C'} {formatValue(item.nutrition.carbs)}g</span>
         <span>P {formatValue(item.nutrition.protein)}g</span>
-        <span>F {formatValue(item.nutrition.fat)}g</span>
+        <span>{locale === 'ja' ? '脂' : 'F'} {formatValue(item.nutrition.fat)}g</span>
         <span>{locale === 'ja' ? '繊' : 'Fb'} {formatValue(item.nutrition.fiber)}g</span>
       </div>
     </div>
