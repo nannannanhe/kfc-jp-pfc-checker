@@ -1,0 +1,33 @@
+name: Deploy Preview
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: Branch to deploy as preview
+        required: true
+        default: develop
+
+permissions:
+  contents: read
+
+jobs:
+  deploy:
+    name: Deploy Preview
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+        with:
+          ref: ${{ inputs.branch }}
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 24
+          cache: npm
+      - run: npm ci
+      - run: npm run build
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy dist --project-name=kfc-jp-pfc-checker --branch=${{ inputs.branch }}
