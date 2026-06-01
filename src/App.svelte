@@ -21,11 +21,19 @@
     <LanguageToggle bind:locale />
   </header>
   <div class="bg-blue-50 border-b border-blue-200 text-xs text-center text-gray-600 px-4 py-1.5">
-    栄養成分データは
-    <a href="https://www.kfc.co.jp/food_information" target="_blank" rel="noopener noreferrer"
-      class="underline text-primary">KFC Japan 公式栄養成分表</a
-    >
-    に基づきます（更新日: {dataDate}）
+    {#if locale === 'ja'}
+      栄養成分データは
+      <a href="https://www.kfc.co.jp/food_information" target="_blank" rel="noopener noreferrer"
+        class="underline text-primary">KFC Japan 公式栄養成分表</a
+      >
+      に基づきます（掲載データ更新日: {dataDate}）
+    {:else}
+      Nutrition data is based on the
+      <a href="https://www.kfc.co.jp/food_information" target="_blank" rel="noopener noreferrer"
+        class="underline text-primary">KFC Japan official nutrition table</a
+      >
+      (Data updated: {dataDate})
+    {/if}
   </div>
 
   <main class="max-w-5xl mx-auto px-4 py-4 pb-8 flex flex-col md:grid md:grid-cols-[1fr,380px] md:gap-6 md:items-start">
