@@ -8,20 +8,28 @@ test('page loads with four category tabs', async ({ page }) => {
   await expect(page.getByRole('button', { name: 'ドリンク' })).toBeVisible();
 });
 
-test('select item → appears in selected list → total appears', async ({ page }) => {
+test('selected and total sections visible on load with placeholder', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByText('選択中')).toBeVisible();
+  await expect(page.getByText('合計')).toBeVisible();
+  await expect(page.getByText('品目を選択してください').first()).toBeVisible();
+});
+
+test('select item → placeholder disappears, item appears in list', async ({ page }) => {
   await page.goto('/');
   await page.getByLabel('add').first().click();
+  await expect(page.getByText('品目を選択してください').first()).not.toBeVisible();
   await expect(page.getByText('選択中')).toBeVisible();
   await expect(page.getByText('合計')).toBeVisible();
 });
 
-test('deselect item → removed from list → total hidden', async ({ page }) => {
+test('deselect item → sections stay visible, placeholder returns', async ({ page }) => {
   await page.goto('/');
   await page.getByLabel('add').first().click();
-  await expect(page.getByText('選択中')).toBeVisible();
   await page.getByLabel('remove').click();
-  await expect(page.getByText('選択中')).not.toBeVisible();
-  await expect(page.getByText('合計')).not.toBeVisible();
+  await expect(page.getByText('選択中')).toBeVisible();
+  await expect(page.getByText('合計')).toBeVisible();
+  await expect(page.getByText('品目を選択してください').first()).toBeVisible();
 });
 
 test('drink category shows "-" for fiber (null value)', async ({ page }) => {
@@ -45,6 +53,25 @@ test('quantity increases and total updates', async ({ page }) => {
   await addBtn.click();
   await addBtn.click();
   await expect(page.getByText('× 2')).toBeVisible();
-  const totalSection = page.getByText('合計');
-  await expect(totalSection).toBeVisible();
+  await expect(page.getByText('合計')).toBeVisible();
+});
+
+test('announce bar shows data source link and date in Japanese', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByRole('link', { name: 'KFC Japan 公式栄養成分表' })).toBeVisible();
+  await expect(page.getByText(/掲載データ更新日/)).toBeVisible();
+});
+
+test('announce bar switches to English with language toggle', async ({ page }) => {
+  await page.goto('/');
+  await page.getByRole('button', { name: 'English' }).click();
+  await expect(page.getByRole('link', { name: 'KFC Japan official nutrition table' })).toBeVisible();
+  await expect(page.getByText(/Data updated/)).toBeVisible();
+});
+
+test('fat label shows 脂 in Japanese and F in English', async ({ page }) => {
+  await page.goto('/');
+  await expect(page.getByText(/脂 \d/).first()).toBeVisible();
+  await page.getByRole('button', { name: 'English' }).click();
+  await expect(page.getByText(/F \d/).first()).toBeVisible();
 });

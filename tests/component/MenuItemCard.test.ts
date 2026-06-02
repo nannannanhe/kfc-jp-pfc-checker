@@ -38,6 +38,16 @@ describe('MenuItemCard', () => {
     expect(screen.getByText(/繊 -g/)).toBeInTheDocument();
   });
 
+  it('displays 脂 label for fat in ja locale', () => {
+    render(MenuItemCard, { item: baseItem, locale: 'ja' });
+    expect(screen.getByText(/脂 12\.8g/)).toBeInTheDocument();
+  });
+
+  it('displays F label for fat in en locale', () => {
+    render(MenuItemCard, { item: baseItem, locale: 'en' });
+    expect(screen.getByText(/F 12\.8g/)).toBeInTheDocument();
+  });
+
   it('shows calories in the card', () => {
     render(MenuItemCard, { item: baseItem, locale: 'ja' });
     expect(screen.getByText(/218 kcal/)).toBeInTheDocument();

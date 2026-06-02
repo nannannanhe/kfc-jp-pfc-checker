@@ -19,7 +19,7 @@
         <span>{formatValue(item.nutrition.calories)} kcal</span>
         <span>{locale === 'ja' ? '炭' : 'C'} {formatValue(item.nutrition.carbs)}g</span>
         <span>P {formatValue(item.nutrition.protein)}g</span>
-        <span>F {formatValue(item.nutrition.fat)}g</span>
+        <span>{locale === 'ja' ? '脂' : 'F'} {formatValue(item.nutrition.fat)}g</span>
         <span>{locale === 'ja' ? '繊' : 'Fb'} {formatValue(item.nutrition.fiber)}g</span>
       </div>
     </div>
@@ -36,7 +36,7 @@
       {/if}
       <button
         onclick={() => order.add(item)}
-        class="w-7 h-7 rounded-full bg-red-600 text-white font-bold text-lg leading-none hover:bg-red-700 transition-colors"
+        class="w-7 h-7 rounded-full bg-primary text-white font-bold text-lg leading-none hover:bg-primary-hover transition-colors"
         aria-label="add"
       >
         +

@@ -2,7 +2,14 @@
 export default {
   content: ['./index.html', './src/**/*.{svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: {
+          DEFAULT: '#1a6bbc',
+          hover: '#155a9e',
+        },
+      },
+    },
   },
   plugins: [],
 };
