@@ -36,9 +36,16 @@
 - [x] 撰寫 Component Tests（`tests/component/MenuItemCard.test.ts`）：缺少資料顯示 `-`、選取/取消行為
 - [x] 撰寫 E2E Tests（`tests/e2e/flow.spec.ts`）：完整使用者流程、語言切換
 - [x] Node.js 24 環境で `npm test` 実行確認済み（unit / component テスト pass）
-- [ ] `npm run test:e2e` 実行確認（CI / ローカルともに未確認）
+- [x] `npm run test:e2e` 実行確認済み
 
 ## CI/CD
 
 - [x] 設置 GitHub Actions（`.github/workflows/ci.yml`）：unit → component → e2e → deploy
-- [ ] Cloudflare Pages の `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` を GitHub Secrets に登録
+- [x] Cloudflare Pages の `CLOUDFLARE_API_TOKEN` / `CLOUDFLARE_ACCOUNT_ID` を GitHub Secrets に登録
+
+## UI 改善（2026-06）
+
+- [x] 主體色変更（KFC 紅 → #4793d1 藍）：`tailwind.config.js` + 全元件
+- [x] Announce バー追加：資料出典 + 更新日（KFC JP 公式栄養成分表リンク付き）
+- [x] 2 列レイアウト（PC）：左=メニュー、右=選択済み+合計（sticky）；モバイルは単列で選択済みが上
+- [x] 日文 PFC 標籤統一：脂質を「F」→「脂」に変更

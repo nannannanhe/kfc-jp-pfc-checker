@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { calcTotal, formatValue, scaleValue, loadMenuItems } from '../../src/lib/nutrition';
+import { calcTotal, formatValue, scaleValue, loadMenuItems, getDataDate } from '../../src/lib/nutrition';
 import type { MenuItem } from '../../src/types';
 
 function mockItem(overrides: Partial<MenuItem['nutrition']> = {}): MenuItem {
@@ -88,6 +88,19 @@ describe('scaleValue', () => {
 
   it('rounds decimal to 1 place', () => {
     expect(scaleValue(10.5, 2)).toBe('21.0');
+  });
+});
+
+describe('getDataDate', () => {
+  it('returns a non-empty date string', () => {
+    const date = getDataDate();
+    expect(typeof date).toBe('string');
+    expect(date.length).toBeGreaterThan(0);
+  });
+
+  it('returns the date from nutrition.json', () => {
+    const date = getDataDate();
+    expect(date).toMatch(/\d{4}\/\d{1,2}\/\d{1,2}/);
   });
 });
 

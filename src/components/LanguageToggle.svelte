@@ -8,7 +8,7 @@
   onclick={() => {
     locale = locale === 'ja' ? 'en' : 'ja';
   }}
-  class="px-3 py-1 bg-white text-red-600 rounded font-medium text-sm hover:bg-red-50 transition-colors"
+  class="px-3 py-1 bg-white text-primary rounded font-medium text-sm hover:bg-blue-50 transition-colors"
 >
   {locale === 'ja' ? 'English' : '日本語'}
 </button>
