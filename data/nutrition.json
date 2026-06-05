@@ -1,6 +1,6 @@
 {
   "source": "ケンタッキーフライドチキン 栄養成分表",
-  "date": "2026/4/8",
+  "date": "2026/6/3",
   "unit": {
     "energy": "kcal",
     "protein": "g",
@@ -20,6 +20,16 @@
       "dietary_fiber": 0.4
     },
     {
+      "name": "辛旨ジンガー",
+      "name_en": "Spicy & Savory Zinger Chicken",
+      "category": "chicken",
+      "energy": 149,
+      "protein": 9.8,
+      "fat": 9.0,
+      "carbohydrate": 7.3,
+      "dietary_fiber": 0.3
+    },
+    {
       "name": "レモン香るパリパリ旨塩チキン",
       "name_en": "Salty Chicken With Aroma of Lemon",
       "category": "chicken",
@@ -27,26 +37,6 @@
       "protein": 17.6,
       "fat": 15.0,
       "carbohydrate": 11.9,
-      "dietary_fiber": 0.3
-    },
-    {
-      "name": "レッドホットチキン",
-      "name_en": "Red Hot Chicken",
-      "category": "chicken",
-      "energy": 271,
-      "protein": 20.9,
-      "fat": 16.7,
-      "carbohydrate": 9.3,
-      "dietary_fiber": 0.6
-    },
-    {
-      "name": "まるかじりケンタ",
-      "name_en": "Marukajiri Kenta",
-      "category": "chicken",
-      "energy": 134,
-      "protein": 9.1,
-      "fat": 7.9,
-      "carbohydrate": 6.9,
       "dietary_fiber": 0.3
     },
     {
@@ -78,6 +68,56 @@
       "fat": 13.4,
       "carbohydrate": 11.8,
       "dietary_fiber": 0.3
+    },
+    {
+      "name": "まるかじりケンタ",
+      "name_en": "Marukajiri Kenta",
+      "category": "chicken",
+      "energy": 134,
+      "protein": 9.1,
+      "fat": 7.9,
+      "carbohydrate": 6.9,
+      "dietary_fiber": 0.3
+    },
+    {
+      "name": "レッドホットチキン",
+      "name_en": "Red Hot Chicken",
+      "category": "chicken",
+      "energy": 271,
+      "protein": 20.9,
+      "fat": 16.7,
+      "carbohydrate": 9.3,
+      "dietary_fiber": 0.6
+    },
+    {
+      "name": "NEW YORK style オニオンリングフィレバーガー",
+      "name_en": "Onion Ring & Fillet Burger",
+      "category": "burger",
+      "energy": 564,
+      "protein": 28.5,
+      "fat": 29.7,
+      "carbohydrate": 45.7,
+      "dietary_fiber": 2.4
+    },
+    {
+      "name": "TEXAS style スパイシーアボカドフィレバーガー",
+      "name_en": "Spicy Avocado & Fillet Burger",
+      "category": "burger",
+      "energy": 418,
+      "protein": 27.6,
+      "fat": 19.8,
+      "carbohydrate": 33.4,
+      "dietary_fiber": 2.4
+    },
+    {
+      "name": "LAS VEGAS style ダブルダウンフィレバーガー",
+      "name_en": "Double Down Fillet Burger",
+      "category": "burger",
+      "energy": 625,
+      "protein": 44.7,
+      "fat": 34.7,
+      "carbohydrate": 32.5,
+      "dietary_fiber": 1.3
     },
     {
       "name": "ケンタの鶏竜田バーガー",
@@ -150,6 +190,26 @@
       "dietary_fiber": 2.1
     },
     {
+      "name": "ペッパーマヨツイスター",
+      "name_en": "Pepper Mayo Twister",
+      "category": "burger",
+      "energy": 302,
+      "protein": 10.8,
+      "fat": 14.8,
+      "carbohydrate": 32.0,
+      "dietary_fiber": 1.7
+    },
+    {
+      "name": "てりやきツイスター",
+      "name_en": "Teriyaki Twister",
+      "category": "burger",
+      "energy": 360,
+      "protein": 11.6,
+      "fat": 18.8,
+      "carbohydrate": 35.0,
+      "dietary_fiber": 3.2
+    },
+    {
       "name": "チーズにおぼれるフィレバーガー（クリーミーモッツァレラ）",
       "name_en": "Fillet Burger Drowning in Cheese (Creamy Mozzarella)",
       "category": "burger",
@@ -168,26 +228,6 @@
       "fat": 28.2,
       "carbohydrate": 31.9,
       "dietary_fiber": 1.6
-    },
-    {
-      "name": "ペッパーマヨツイスター",
-      "name_en": "Papper Mayo Twister",
-      "category": "burger",
-      "energy": 301,
-      "protein": 11.3,
-      "fat": 14.5,
-      "carbohydrate": 31.7,
-      "dietary_fiber": 3.3
-    },
-    {
-      "name": "てりやきツイスター",
-      "name_en": "Teriyaki Twister",
-      "category": "burger",
-      "energy": 360,
-      "protein": 11.6,
-      "fat": 18.8,
-      "carbohydrate": 35.0,
-      "dietary_fiber": 3.2
     },
     {
       "name": "チーズにおぼれるツイスター",
@@ -298,6 +338,16 @@
       "fat": 15.8,
       "carbohydrate": 29.0,
       "dietary_fiber": 1.5
+    },
+    {
+      "name": "ちゅる～りぃ（グリーンライム）",
+      "name_en": "CHURULY (Green Lime)",
+      "category": "drink",
+      "energy": 202,
+      "protein": 0.0,
+      "fat": 0.0,
+      "carbohydrate": 51.2,
+      "dietary_fiber": null
     },
     {
       "name": "ちゅる～りぃ（ブルーハワイ）",
