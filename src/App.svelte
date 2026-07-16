@@ -37,12 +37,12 @@
   </div>
 
   <main class="max-w-5xl mx-auto px-4 py-4 pb-8 flex flex-col md:grid md:grid-cols-[1fr_380px] md:gap-6 md:items-start">
-    <section class="order-1 md:order-2 mb-6 md:mb-0 md:sticky md:top-[52px]">
+    <section data-testid="selection-section" class="order-1 md:order-2 mb-6 md:mb-0 md:sticky md:top-[52px]">
       <SelectedList {locale} />
       <TotalRow {locale} />
     </section>
 
-    <section class="order-2 md:order-1">
+    <section data-testid="menu-section" class="order-2 md:order-1">
       <CategoryTabs bind:activeCategory {locale} />
       <MenuList items={visibleItems} {locale} />
     </section>
