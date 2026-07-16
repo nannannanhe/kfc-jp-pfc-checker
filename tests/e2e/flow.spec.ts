@@ -75,3 +75,45 @@ test('fat label shows 脂 in Japanese and F in English', async ({ page }) => {
   await page.getByRole('button', { name: 'English' }).click();
   await expect(page.getByText(/F \d/).first()).toBeVisible();
 });
+
+async function getLayoutBoxes(page: import('@playwright/test').Page) {
+  const menu = await page.getByTestId('menu-section').boundingBox();
+  const selection = await page.getByTestId('selection-section').boundingBox();
+  expect(menu).not.toBeNull();
+  expect(selection).not.toBeNull();
+  return { menu: menu!, selection: selection! };
+}
+
+for (const [device, viewport] of [
+  ['desktop', { width: 1280, height: 800 }],
+  ['tablet', { width: 768, height: 1024 }],
+] as const) {
+  test.describe(`${device} layout`, () => {
+    test.use({ viewport });
+
+    test('two columns: menu on the left, selection + total on the right', async ({ page }) => {
+      await page.goto('/');
+      const { menu, selection } = await getLayoutBoxes(page);
+      expect(menu.x + menu.width).toBeLessThanOrEqual(selection.x);
+      expect(menu.y).toBeLessThan(selection.y + selection.height);
+      expect(selection.y).toBeLessThan(menu.y + menu.height);
+    });
+  });
+}
+
+test.describe('mobile layout', () => {
+  test.use({ viewport: { width: 375, height: 667 } });
+
+  test('single column: selection, total, then menu', async ({ page }) => {
+    await page.goto('/');
+    const { menu, selection } = await getLayoutBoxes(page);
+    expect(selection.y + selection.height).toBeLessThanOrEqual(menu.y);
+
+    const selectedHeading = await page.getByText('選択中').boundingBox();
+    const totalRow = await page.getByText('合計').boundingBox();
+    expect(selectedHeading).not.toBeNull();
+    expect(totalRow).not.toBeNull();
+    expect(selectedHeading!.y).toBeLessThan(totalRow!.y);
+    expect(totalRow!.y + totalRow!.height).toBeLessThanOrEqual(menu.y);
+  });
+});
