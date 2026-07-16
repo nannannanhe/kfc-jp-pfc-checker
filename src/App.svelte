@@ -36,7 +36,7 @@
     {/if}
   </div>
 
-  <main class="max-w-5xl mx-auto px-4 py-4 pb-8 flex flex-col md:grid md:grid-cols-[1fr,380px] md:gap-6 md:items-start">
+  <main class="max-w-5xl mx-auto px-4 py-4 pb-8 flex flex-col md:grid md:grid-cols-[1fr_380px] md:gap-6 md:items-start">
     <section class="order-1 md:order-2 mb-6 md:mb-0 md:sticky md:top-[52px]">
       <SelectedList {locale} />
       <TotalRow {locale} />
